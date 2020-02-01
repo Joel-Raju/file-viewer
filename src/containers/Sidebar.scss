@@ -1,0 +1,47 @@
+.sidebar-wrapper {
+  display: flex;
+  flex-direction: column;
+  flex-basis: 100%;
+
+  .document-list-wrapper {
+    display: flex;
+    flex-direction: column;
+    flex: 1 1 auto;
+    overflow-y: auto;
+    min-height: 0px;
+    margin-top: 51px;
+
+    .files-label {
+      text-transform: uppercase;
+      font-family: Poppins;
+      font-style: normal;
+      font-weight: 600;
+      font-size: 18px;
+      line-height: 31px;
+      color: rgba(255, 255, 255, 0.27);
+      margin-left: 53px;
+    }
+    .list {
+      padding: 0;
+      display: flex;
+      flex-direction: column;
+      flex: 1 1 auto;
+      overflow-y: auto;
+      min-height: 0px;
+    }
+  }
+
+  .logo {
+    margin-left: 53px;
+    margin-top: 70px;
+  }
+
+  .footer {
+    margin-top: 33px;
+    margin-bottom: 33px;
+    margin-left: 40px;
+    margin-right: 40px;
+    display: flex;
+    justify-content: center;
+  }
+}

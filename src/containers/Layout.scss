@@ -1,0 +1,45 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins&display=swap');
+
+@mixin bp($point) {
+  @if $point == full {
+    @media (min-width: 960px) {
+      @content;
+    }
+  } @else if $point == medium {
+    @media (min-width: 768px) {
+      @content;
+    }
+  } @else if $point == small {
+    @media (min-width: 500px) {
+      @content;
+    }
+  }
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
+  min-width: 100vw;
+
+  @include bp(small) {
+    flex-direction: row;
+  }
+
+  .sidebar {
+    display: flex;
+    order: 0;
+    flex: 0 1 100%;
+    background: #070d59;
+    @include bp(small) {
+      flex: 0 1 498px;
+      flex-direction: row;
+    }
+  }
+  .content {
+    background: #e5e5e5;
+    order: 1;
+    flex: 0 1 100%;
+    min-height: 100%;
+  }
+}

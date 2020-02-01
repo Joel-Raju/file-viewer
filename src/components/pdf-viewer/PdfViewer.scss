@@ -1,0 +1,24 @@
+.pdf-viewer-wrapper {
+  display: flex;
+  flex-direction: column;
+  flex-basis: 100%;
+  margin-left: 80px;
+
+  .header {
+    display: flex;
+    flex-direction: row;
+    margin-top: 70px;
+    margin-bottom: 70px;
+  }
+
+  .title {
+    color: #2d1f3f;
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 36px;
+    line-height: 54px;
+    display: flex;
+    align-items: center;
+  }
+}
