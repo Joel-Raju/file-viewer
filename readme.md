@@ -1,5 +1,7 @@
 # file-viewer
 
+A web app to view pdf files. Built with ReactJS.
+
 ## build and run
 
 ```bash
